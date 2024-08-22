@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const fetchArtist = async (req, res) => {
-  const { artistId } = req.params;
+  const { artistId } = req.body;
 
   if (!artistId) {
     return res.status(400).send({ message: "albumId is required" });
