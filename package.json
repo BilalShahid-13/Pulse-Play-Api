@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BilalShahid-13/Pulse-Play-Api.git"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
