@@ -3,6 +3,6 @@ import { fetchArtist } from "../controllers/Artist.controller.js";
 
 const artistRouter = Router();
 
-artistRouter.get("/fetchSongs", fetchArtist);
+artistRouter.post("/fetchSongs", fetchArtist);
 
 export { artistRouter };
