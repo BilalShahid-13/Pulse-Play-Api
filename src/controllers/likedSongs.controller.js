@@ -6,13 +6,13 @@ const saveLikedSongs = async (req, res) => {
     req.body;
 
   if (
-    !songId ||
-    !songName ||
-    !artist ||
-    !albumId ||
-    !songImageUrl ||
-    !duration ||
-    !songUrl
+    !songId
+    // !songName ||
+    // !artist ||
+    // !albumId ||
+    // !songImageUrl ||
+    // !duration ||
+    // !songUrl
   ) {
     return res.status(400).send({ message: "all fields are required" });
   }
@@ -20,12 +20,12 @@ const saveLikedSongs = async (req, res) => {
     const likedSong = await Liked.create({
       userId: req.user.id,
       songId,
-      songName,
-      artist,
-      albumId,
-      songImgURL: songImageUrl,
-      duration,
-      songURL: songUrl,
+      // songName,
+      // artist,
+      // albumId,
+      // songImgURL: songImageUrl,
+      // duration,
+      // songURL: songUrl,
     });
 
     nodeCache.set("likedSongs", likedSong);
