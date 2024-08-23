@@ -28,7 +28,6 @@ import searchRouter from "./src/routes/ searchedSongs.route.js";
 import { likedRouter } from "./src/routes/likedSong.route.js";
 import { albumRouter } from "./src/routes/searchedAlbum.route.js";
 import { genresRouter } from "./src/routes/genres.route.js";
-import { fetchArtist } from "./src/controllers/Artist.controller.js";
 import { artistRouter } from "./src/routes/artist.route.js";
 
 // db
